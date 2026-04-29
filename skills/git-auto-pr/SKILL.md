@@ -13,9 +13,9 @@ Execute these 6 steps sequentially:
 
 ### Step 1: Validate Branch
 
-Run `git branch --show-current` and verify format: `master`, `feature/xxx`, `hotfix/xxx`, `spec/xxx`
+Run `git branch --show-current` and verify format: `master`, `feature/xxx`, `hotfix/xxx`, `prd/xxx`
 
-- Valid: `master`, `feature/add-function`, `hotfix/fix-bug`, `spec/update-docs`
+- Valid: `master`, `feature/add-function`, `hotfix/fix-bug`, `prd/update-docs`
 - Invalid: `main`, `task/123`
 
 If invalid, output error and EXIT:
@@ -23,7 +23,7 @@ If invalid, output error and EXIT:
 ```
 ❌ 分支名稱不符合規則
 目前分支：{current_branch}
-要求格式：`master`, `feature/xxx`, `hotfix/xxx`, `spec/xxx`
+要求格式：`master`, `feature/xxx`, `hotfix/xxx`, `prd/xxx`
 ```
 
 ### Step 2: Check GitHub CLI
